@@ -165,7 +165,7 @@ describe('DepGraph', function () {
   });
 
   it('should allow cycles when configured', function () {
-    var graph = new DepGraph({ circular: true });
+    var graph = new DepGraph({ circular: false });
 
     graph.addNode('a');
     graph.addNode('b');
